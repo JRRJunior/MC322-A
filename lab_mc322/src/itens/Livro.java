@@ -2,17 +2,21 @@ package itens;
 
 public class Livro {
 	//Atributos
-	private String isbn; 
+	private String isbn;
+	private String codigoDeBarras;
 	private String titulo;
 	private String autor;
-	private int dataPublicacao; 
+	private String editora;
+	private String dataLancamento;
 	
 	//Construtor
-	public Livro(String isbn, String titulo, String autor, int dataPublicacao) {
+	public Livro(String isbn, String codigoDeBarras, String titulo, String autor, String editora, String dataLancamento) {
 		this.isbn = isbn;
+		this.codigoDeBarras = codigoDeBarras;
 		this.titulo = titulo;
 		this.autor = autor;
-		this.dataPublicacao = dataPublicacao;
+		this.editora = editora;
+		this.dataLancamento = dataLancamento;
 	}
 	
 	//Getters e setters
@@ -21,6 +25,13 @@ public class Livro {
 	}
 	public void setisbn(String isbn) {
 		this.isbn = isbn;
+	}
+	
+	public String getcodigoDeBarras() {
+		return codigoDeBarras;
+	}
+	public void setcodigoDeBarras(String codigoDeBarras) {
+		this.codigoDeBarras = codigoDeBarras;
 	}
 	
 	public String gettitulo() {
@@ -37,13 +48,18 @@ public class Livro {
 		this.autor = autor;
 	}
 	
-	public int getdataPublicacao() {
-		return dataPublicacao;
+	public String geteditora() {
+		return editora;
 	}
-	public void setdataPublicacao(int dataPublicacao) {
-		this.dataPublicacao = dataPublicacao;
+	public void seteditora(String editora) {
+		this.editora = editora;
 	}
 	
+	public String getdataLancamento() {
+		return dataLancamento;
+	}
+	public void setdataLancamento(String dataLancamento) {
+		this.dataLancamento = dataLancamento;
+	}
 	
-
 }
