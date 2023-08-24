@@ -1,6 +1,6 @@
 package itens;
 
-public class Livro {
+public class LivroFisico {
 	//Atributos
 	private String isbn;
 	private String codigoDeBarras;
@@ -10,7 +10,7 @@ public class Livro {
 	private String dataLancamento;
 	
 	//Construtor
-	public Livro(String isbn, String codigoDeBarras, String titulo, String autor, String editora, String dataLancamento) {
+	public LivroFisico(String isbn, String codigoDeBarras, String titulo, String autor, String editora, String dataLancamento) {
 		this.isbn = isbn;
 		this.codigoDeBarras = codigoDeBarras;
 		this.titulo = titulo;

@@ -1,30 +1,26 @@
 package Main;
 
-import itens.Item;
-import itens.Livro;
-import itens.Revista;
-import itens.CD;
-import itens.DVD;
-import MembroEfuncionario.Membro;
-import MembroEfuncionario.funcionario;
+import itens.*;
+import MembroEfuncionario.*;
 
 public class Main {
 	//instanciando objetos
 	public static void main(String[] args) {
 	Item itemsolicitado = new Item("Livro", "disponível");
-	Livro livroSolicitado = new Livro("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx", "xxxxxx", "xxxxxx","xx/xx/xxxx");
+	LivroFisico livroFisicoSolicitado = new LivroFisico("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx", "xxxxxx", "xxxxxx","xx/xx/xxxx");
+	LivroDigital livroDigitalSolicitado = new LivroDigital("xxx-xx-xxxxx-xx-x", "xxxxxx", "xxxxxx", "xxxxxx","xx/xx/xxxx");
 	Revista revistaSolicitada = new Revista("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx",  "xxxxxx","xx/xx/xxxx");
 	CD cdSolicitado = new CD("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx","xxxxxx", "xxxxxx","xx/xx/xxxx");
 	DVD dvdSolicitado = new DVD("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx","xxxxxx", "xxxxxx","xx/xx/xxxx");
 	Membro membro = new Membro("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, "xx/xx/xxxx", "válida");
 	funcionario bibliotecarioResponsável = new funcionario("xxxxxx", "xxxxxx", "xx/xx/xxxx");
 	
-	String titulo = livroSolicitado.gettitulo();
-	String isbn = livroSolicitado.getisbn();
-	String codigoDeBarras = livroSolicitado.getcodigoDeBarras();
-	String autor = livroSolicitado.getautor();
-	String editora = livroSolicitado.geteditora();
-	String dataLancamento = livroSolicitado.getdataLancamento();
+	String titulo = livroFisicoSolicitado.gettitulo();
+	String isbn = livroFisicoSolicitado.getisbn();
+	String codigoDeBarras = livroFisicoSolicitado.getcodigoDeBarras();
+	String autor = livroFisicoSolicitado.getautor();
+	String editora = livroFisicoSolicitado.geteditora();
+	String dataLancamento = livroFisicoSolicitado.getdataLancamento();
 	String itemSolicitado = itemsolicitado.getitemSolicitado();
 	String disponibilidade = itemsolicitado.getdisponibilidade();
 	int numeroDaConta = membro.getnumeroDaConta();
