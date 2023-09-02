@@ -1,28 +1,74 @@
 package itens;
 
 public class Item {
-	//atributos
-	public String itemSolicitado;
-	public String disponibilidade;
-	
-	public Item(String itemSolicitado, String disponibilidade) {
-		this.itemSolicitado = itemSolicitado;
-		this.disponibilidade = disponibilidade;
-	}
-	
-	//getters e setters
-	public String getitemSolicitado() {
-		return itemSolicitado;
-	}
-	public void setitemSolicitado(String itemSolicitado) {
-		this.itemSolicitado = itemSolicitado;
-	}
-	
-	public String getdisponibilidade() {
-		return disponibilidade;
-	}
-	public void setdisponibilidade(String disponibilidade) {
-		this.disponibilidade = disponibilidade;
-	}
+	//Atributos
+		private String titulo;
+		private String autor;
+		private String editora;
+		private int anoPublicacao;
+		private String genero;
+		private String sinopse;
+		private String capa;
+		
+		//Construtor
+		public Item(String titulo, String autor, String editora, int anoPublicacao, String genero, String sinopse, String capa) {
+			this.titulo = titulo;
+			this.autor = autor;
+			this.editora = editora;
+			this.anoPublicacao = anoPublicacao;
+			this.genero = genero;
+			this.sinopse = sinopse;
+			this.capa = capa;
+		}
+		
+		//Getters e setters
+		public String gettitulo() {
+			return titulo;
+		}
+		public void settitulo(String titulo) {
+			this.titulo = titulo;
+		}
+		
+		public String getautor() {
+			return autor;
+		}
+		public void setautor(String autor) {
+			this.autor = autor;
+		}
+		
+		public String geteditora() {
+			return editora;
+		}
+		public void seteditora(String editora) {
+			this.editora = editora;
+		}
+		
+		public int getanoPublicacao() {
+			return anoPublicacao;
+		}
+		public void setanoPublicacao(int anopublicacao) {
+			this.anoPublicacao = anoPublicacao;
+		}
+		
+		public String getgenero() {
+			return genero;
+		}
+		public void setgenero(String genero) {
+			this.genero = genero;
+		}
+		
+		public String getsinopse() {
+			return sinopse;
+		}
+		public void setsinopse(String sinopse) {
+			this.sinopse = sinopse;
+		}
+		
+		public String getcapa() {
+			return capa;
+		}
+		public void setcapa(String capa) {
+			this.capa = capa;
+		}
 
 }

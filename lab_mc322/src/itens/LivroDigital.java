@@ -1,56 +1,47 @@
 package itens;
 
-public class LivroDigital {
+public class LivroDigital extends Item {
 	//Atributos
-	private String isbn;
-	private String titulo;
-	private String autor;
-	private String editora;
-	private String dataLancamento;
+	private String formato;
+	private String formatoArquivo;
+	private String requisitoDeLeitura;
+	private String dataDisponibilidade;
 	
 	//Construtor
-	public LivroDigital(String isbn, String titulo, String autor, String editora, String dataLancamento) {
-		this.isbn = isbn;
-		this.titulo = titulo;
-		this.autor = autor;
-		this.editora = editora;
-		this.dataLancamento = dataLancamento;
+	public LivroDigital(String formato, String formatoArquivo, String requisitoDeLeitura, String dataDisponibilidade, String titulo, String autor, String editora, int anoPublicacao, String genero, String sinopse, String capa) {
+		super (titulo, autor, editora, anoPublicacao, genero, sinopse, capa);
+		this.formato = formato;
+		this.formatoArquivo = formatoArquivo;
+		this.requisitoDeLeitura = requisitoDeLeitura;
 	}
 	
 	//Getters e setters
-	public String getisbn() {
-		return isbn;
+	public String getformato() {
+		return formato;
 	}
-	public void setisbn(String isbn) {
-		this.isbn = isbn;
-	}
-	
-	public String gettitulo() {
-		return titulo;
-	}
-	public void settitulo(String titulo) {
-		this.titulo = titulo;
+	public void setformato(String formato) {
+		this.formato = formato;
 	}
 	
-	public String getautor() {
-		return autor;
+	public String getformatoArquivo() {
+		return formatoArquivo;
 	}
-	public void setautor(String autor) {
-		this.autor = autor;
-	}
-	
-	public String geteditora() {
-		return editora;
-	}
-	public void seteditora(String editora) {
-		this.editora = editora;
+	public void setformatoArquivo(String formatoArquivo) {
+		this.formatoArquivo = formatoArquivo;
 	}
 	
-	public String getdataLancamento() {
-		return dataLancamento;
+	public String getrequisitoDeLeitura() {
+		return requisitoDeLeitura;
 	}
-	public void setdataLancamento(String dataLancamento) {
-		this.dataLancamento = dataLancamento;
+	public void setrequisitoDeLeitura(String requisitoDeLeitura) {
+		this.requisitoDeLeitura = requisitoDeLeitura;
+	}
+	
+	public String getdataDisponibilidade() {
+		return dataDisponibilidade;
+	}
+	public void setdataDisponibilidade(String dataDisponibilidade) {
+		this.dataDisponibilidade = dataDisponibilidade;
 	}
 	
 }

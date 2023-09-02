@@ -1,65 +1,38 @@
 package itens;
 
-public class LivroFisico {
+public class LivroFisico extends Item{
 	//Atributos
-	private String isbn;
-	private String codigoDeBarras;
-	private String titulo;
-	private String autor;
-	private String editora;
-	private String dataLancamento;
+	private int isbn;
+	private int edicao;
+	private String estadoConservacao;
 	
-	//Construtor
-	public LivroFisico(String isbn, String codigoDeBarras, String titulo, String autor, String editora, String dataLancamento) {
+	//construtor
+	public LivroFisico(int isbn, int edicao, String estadoConservacao, String titulo, String autor, String editora, int anoPublicacao, String genero, String sinopse, String capa) {
+		super (titulo, autor, editora, anoPublicacao, genero, sinopse, capa);
 		this.isbn = isbn;
-		this.codigoDeBarras = codigoDeBarras;
-		this.titulo = titulo;
-		this.autor = autor;
-		this.editora = editora;
-		this.dataLancamento = dataLancamento;
+		this.edicao = edicao;
+		this.estadoConservacao = estadoConservacao;
 	}
-	
-	//Getters e setters
-	public String getisbn() {
-		return isbn;
-	}
-	public void setisbn(String isbn) {
-		this.isbn = isbn;
-	}
-	
-	public String getcodigoDeBarras() {
-		return codigoDeBarras;
-	}
-	public void setcodigoDeBarras(String codigoDeBarras) {
-		this.codigoDeBarras = codigoDeBarras;
-	}
-	
-	public String gettitulo() {
-		return titulo;
-	}
-	public void settitulo(String titulo) {
-		this.titulo = titulo;
-	}
-	
-	public String getautor() {
-		return autor;
-	}
-	public void setautor(String autor) {
-		this.autor = autor;
-	}
-	
-	public String geteditora() {
-		return editora;
-	}
-	public void seteditora(String editora) {
-		this.editora = editora;
-	}
-	
-	public String getdataLancamento() {
-		return dataLancamento;
-	}
-	public void setdataLancamento(String dataLancamento) {
-		this.dataLancamento = dataLancamento;
-	}
-	
+		
+		//Getters e setters
+		public int getisbn() {
+			return isbn;
+		}
+		public void setisbn(int isbn) {
+			this.isbn = isbn;
+		}
+		
+		public int getedicao() {
+			return edicao;
+		}
+		public void setedicao(int edicao) {
+			this.edicao = edicao;
+		}
+		
+		public String getestadoConservacao() {
+			return estadoConservacao;
+		}
+		public void setestadoConservacao(String estadoConservacao) {
+			this.estadoConservacao = estadoConservacao;
+		}
 }

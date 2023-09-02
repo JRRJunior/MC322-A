@@ -8,16 +8,16 @@ import Operacoes.*;
 public class Main {
 	//instanciando objetos
 	public static void main(String[] args) {
-	Item itemsolicitado = new Item("Livro", "disponível");
-	LivroFisico livroFisicoSolicitado = new LivroFisico("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx", "xxxxxx", "xxxxxx","xx/xx/xxxx");
-	LivroDigital livroDigitalSolicitado = new LivroDigital("xxx-xx-xxxxx-xx-x", "xxxxxx", "xxxxxx", "xxxxxx","xx/xx/xxxx");
-	Revista revistaSolicitada = new Revista("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx",  "xxxxxx","xx/xx/xxxx");
-	CD cdSolicitado = new CD("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx","xxxxxx", "xxxxxx","xx/xx/xxxx");
-	DVD dvdSolicitado = new DVD("xxx-xx-xxxxx-xx-x", "xxx-xx-xxxxx-xx-x", "xxxxxx","xxxxxx", "xxxxxx","xx/xx/xxxx");
-	EstudanteGrad estudanteGrad= new EstudanteGrad("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, 111111);
-	EstudantePosGrad estudantePosGrad= new EstudantePosGrad("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, 111111);
-	MembroExterno membroExterno = new MembroExterno("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", "xxxxxx", 111111);
-	Funcionario funcionario = new Funcionario("xxxxxx", "xxxxxx", "xx/xx/xxxx", "xxxxxx","xxxxxx","xxxxxx", "xxxxxx");
+	LivroFisico livroFisicoSolicitado = new LivroFisico(0, 0, null, null, null, null, 0, null, null, null);
+	LivroDigital livroDigitalSolicitado = new LivroDigital(null, null, null, null, null, null, null, 0, null, null, null);
+	Outros outraMidiaSolicitada = new Outros(null, null, null,  null, null, null, 0, null, null, null);
+	CD cdSolicitado = new CD(null, null, null, null, null, null, 0, null, null, null);
+	DVD dvdSolicitado = new DVD(null, null, null, null, null, null, 0, null, null, null);
+	EstudanteGrad estudanteGrad= new EstudanteGrad("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, "xx/xx/xxxx", 111111);
+	EstudantePosGrad estudantePosGrad= new EstudantePosGrad("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, "xx/xx/xxxx", 111111);
+	MembroExterno membroExterno = new MembroExterno("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, "xx/xx/xxxx", 111111);
+	Funcionario funcionario = new Funcionario("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, "xx/xx/xxxx", 111111);
+	Professor professor = new Professor("xxxxx", "xxxxxx", "xxxxx@xxxx.com", "(xxx)xxxx-xxxx", 11111, "xx/xx/xxxx", 111111);
 	Emprestimo emprestimo1 = new Emprestimo("xxxxx", "xxxxxx", "xx/xx/xxxx", "xx/xx/xxxx");
 	Emprestimo emprestimo2 = new Emprestimo("yyyyy", "yyyyyy", "yy/yy/yyyy", "yy/yy/yyyy");
 	

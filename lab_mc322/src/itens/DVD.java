@@ -1,65 +1,48 @@
 package itens;
 
-public class DVD {
+public class DVD extends Item {
 	//Atributos
-		private String isan; 
-		private String codigoDeBarras;
-		private String titulo;
-		private String artista;
-		private String editora;
-		private String dataLancamento;
+		private String elenco; 
+		private String duracao;
+		private String legendasEaudiosDisponiniveis;
+		private String estadoConservacao;
 		
 		//Construtor
-		public DVD(String isan, String codigoDeBarras, String titulo, String artista, String editora, String dataLancamento) {
-			this.isan = isan;
-			this.codigoDeBarras = codigoDeBarras;
-			this.titulo = titulo;
-			this.artista = artista;
-			this.editora = editora;
-			this.dataLancamento = dataLancamento;
+		public DVD(String elenco, String duracao, String legendasEaudiosDisponiniveis, String titulo, String autor, String editora, int anoPublicacao, String genero, String sinopse, String capa) {
+			super (titulo, autor, editora, anoPublicacao, genero, sinopse, capa);
+			this.elenco = elenco;
+			this.duracao = duracao;
+			this.legendasEaudiosDisponiniveis = legendasEaudiosDisponiniveis;
+			this.estadoConservacao = estadoConservacao;
 		}
 		
 		//Getters e setters
-		public String getisan() {
-			return isan;
+		public String getelenco() {
+			return elenco;
 		}
-		public void setisan(String isan) {
-			this.isan = isan;
-		}
-		
-		public String getcodigoDeBarras() {
-			return codigoDeBarras;
-		}
-		public void setcodigoDeBarras(String codigoDeBarras) {
-			this.codigoDeBarras = codigoDeBarras;
+		public void setelenco(String elenco) {
+			this.elenco = elenco;
 		}
 		
-		public String gettitulo() {
-			return titulo;
+		public String getduracao() {
+			return duracao;
 		}
-		public void settitulo(String titulo) {
-			this.titulo = titulo;
-		}
-		
-		public String getartista() {
-			return artista;
-		}
-		public void setartista(String artista) {
-			this.artista = artista;
+		public void setduracao(String duracao) {
+			this.duracao = duracao;
 		}
 		
-		public String geteditora() {
-			return editora;
+		public String getlegendasEaudiosDisponiniveis() {
+			return legendasEaudiosDisponiniveis;
 		}
-		public void seteditora(String editora) {
-			this.editora = editora;
+		public void setlegendasEaudiosDisponiniveis(String legendasEaudiosDisponiniveis) {
+			this.legendasEaudiosDisponiniveis = legendasEaudiosDisponiniveis;
 		}
 		
-		public String getdataLancamento() {
-			return dataLancamento;
+		public String getestadoConservacao() {
+			return estadoConservacao;
 		}
-		public void setdataLancamento(String dataLancamento) {
-			this.dataLancamento = dataLancamento;
+		public void setestadoConservacao(String estadoConservacao) {
+			this.estadoConservacao = estadoConservacao;
 		}
 		
 }

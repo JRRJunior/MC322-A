@@ -1,65 +1,39 @@
 package itens;
 
-public class CD {
+public class CD extends Item {
 	//Atributos
-		private String ismn;
-		private String codigoDeBarras;
-		private String titulo;
-		private String artista;
-		private String editora;
-		private String dataLancamento; 
+		private String listaDeFaixas;
+		private String duracaoTotal;
+		private String estadoConservacao; 
 		
 		//Construtor
-		public CD(String ismn, String codigoDeBarras, String titulo, String artista, String editora, String dataLancamento) {
-			this.ismn = ismn;
-			this.codigoDeBarras = codigoDeBarras;
-			this.titulo = titulo;
-			this.artista = artista;
-			this.editora = editora;
-			this.dataLancamento = dataLancamento;
+		public CD(String listaDeFaixas, String duracaoTotal, String estadoConservacao, String titulo, String autor, String editora, int anoPublicacao, String genero, String sinopse, String capa) {
+			super (titulo, autor, editora, anoPublicacao, genero, sinopse, capa);
+			this.listaDeFaixas = listaDeFaixas;
+			this.duracaoTotal = duracaoTotal;
+			this.estadoConservacao = estadoConservacao;
 		}
 		
 		//Getters e setters
-		public String getismn() {
-			return ismn;
+		public String getlistaDeFaixas() {
+			return listaDeFaixas;
 		}
-		public void setismn(String ismn) {
-			this.ismn = ismn;
-		}
-		
-		public String getcodigoDeBarras() {
-			return codigoDeBarras;
-		}
-		public void setcodigoDeBarras(String codigoDeBarras) {
-			this.codigoDeBarras = codigoDeBarras;
+		public void setlistaDeFaixas(String listaDeFaixas) {
+			this.listaDeFaixas = listaDeFaixas;
 		}
 		
-		public String gettitulo() {
-			return titulo;
+		public String getduracaoTotal() {
+			return duracaoTotal;
 		}
-		public void settitulo(String titulo) {
-			this.titulo = titulo;
-		}
-		
-		public String getartista() {
-			return artista;
-		}
-		public void setartista(String artista) {
-			this.artista = artista;
+		public void setduracaoTotal(String duracaoTotal) {
+			this.duracaoTotal = duracaoTotal;
 		}
 		
-		public String geteditora() {
-			return editora;
+		public String getestadoConservacao() {
+			return estadoConservacao;
 		}
-		public void seteditora(String editora) {
-			this.editora = editora;
-		}
-		
-		public String getdataLancamento() {
-			return dataLancamento;
-		}
-		public void setdataLancamento(String dataLancamento) {
-			this.dataLancamento = dataLancamento;
+		public void setestadoConservacao(String estadoConservacao) {
+			this.estadoConservacao = estadoConservacao;
 		}
 		
 }
