@@ -36,4 +36,12 @@ public class CD extends Item {
 			this.estadoConservacao = estadoConservacao;
 		}
 		
+		//métodos
+				public int numeroDeCopias() {
+					return 0;
+				}
+				
+				public int numeroDeCopiasDisponiveis() {
+					return 0;
+				}
 }

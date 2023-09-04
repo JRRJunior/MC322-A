@@ -44,4 +44,13 @@ public class LivroDigital extends Item {
 		this.dataDisponibilidade = dataDisponibilidade;
 	}
 	
+	//métodos
+			public int numeroDeLicencas() {
+				return 0;
+			}
+			
+			public String urlOuLocalDeAcesso() {
+				return null;
+			}
+	
 }

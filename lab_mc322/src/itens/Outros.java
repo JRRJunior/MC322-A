@@ -36,4 +36,16 @@ public class Outros extends Item {
 			this.estadoConservacao = estadoConservacao;
 		}
 		
+		//métodos
+				public int numeroDeCopias() {
+					return 0;
+				}
+				
+				public int numeroDeCopiasDisponiveis() {
+					return 0;
+				}
+				
+				public String localizacaoBiblioteca() {
+					return null;
+				}
 }
