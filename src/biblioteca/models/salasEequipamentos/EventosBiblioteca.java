@@ -2,6 +2,7 @@ package biblioteca.models.salasEequipamentos;
 
 public class EventosBiblioteca {
 	
+	//classes internas
 	class Palestra {
 		private String palestrante;
 		private String topico;

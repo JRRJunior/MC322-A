@@ -10,16 +10,16 @@ import java.util.Scanner;
 public class BibliotecaMain {
     private static BibliotecaController bibliotecaController;
     private static MembroController membroController;
-    private static RelatorioController relatorioController;
+    //private static RelatorioController relatorioController;
 
     public static void main(String[] args) {
         bibliotecaController = new BibliotecaControllerImpl();
         membroController = new MembroControllerImpl();
-        relatorioController = new RelatorioControllerImpl();
+      //  relatorioController = new RelatorioControllerImpl();
 
         BibliotecaView bibliotecaView = new BibliotecaViewImpl(bibliotecaController);
         MembroView membroView = new MembroViewImpl(membroController);
-        RelatorioView relatorioView = new RelatorioViewImpl(relatorioController);
+        //RelatorioView relatorioView = new RelatorioViewImpl(relatorioController);
 
         Scanner scanner = new Scanner(System.in);
         
@@ -49,7 +49,7 @@ public class BibliotecaMain {
                     break;
                 case 3:
                     // Menu de Geração de Relatórios e Estatísticas
-                    menuRelatoriosEstatisticas(scanner, relatorioView);
+                   // menuRelatoriosEstatisticas(scanner, relatorioView);
                     break;
                 case 4:
                     // Menu de Administração de Funcionários
@@ -151,52 +151,52 @@ public class BibliotecaMain {
                     System.out.println("Opção inválida. Por favor, escolha novamente.");
             }
         }
-    }
+   // }
 
-    private static void menuRelatoriosEstatisticas(Scanner scanner, RelatorioView relatorioView) {
-        while (true) {
-            System.out.println("---- Menu Relatórios e Estatísticas ----");
-            System.out.println();
-            System.out.println("1. Gerar Relatório de Atividades de Membros");
-            System.out.println("2. Gerar Relatório de Uso de Itens Multimídia");
-            System.out.println("3. Gerar Relatório de Multas e Pagamentos");
-            System.out.println("4. Gerar Relatório de Disponibilidade de Itens");
-            System.out.println("5. Gerar Estatísticas de Uso por Perfil de Membro");
-            System.out.println("6. Gerar Relatório de Itens Mais Populares");
-            System.out.println("7. Voltar");
-            System.out.println();
-            System.out.println();
-            System.out.print("Escolha uma opção: ");
+    //private static void menuRelatoriosEstatisticas(Scanner scanner, RelatorioView relatorioView) {
+        //while (true) {
+            //System.out.println("---- Menu Relatórios e Estatísticas ----");
+            //System.out.println();
+            //System.out.println("1. Gerar Relatório de Atividades de Membros");
+           // System.out.println("2. Gerar Relatório de Uso de Itens Multimídia");
+           // System.out.println("3. Gerar Relatório de Multas e Pagamentos");
+           // System.out.println("4. Gerar Relatório de Disponibilidade de Itens");
+            //System.out.println("5. Gerar Estatísticas de Uso por Perfil de Membro");
+            //System.out.println("6. Gerar Relatório de Itens Mais Populares");
+            //System.out.println("7. Voltar");
+            //System.out.println();
+            //System.out.println();
+            //System.out.print("Escolha uma opção: ");
 
-            int opcaoRelatorios = scanner.nextInt();
-            scanner.nextLine();
+            //int opcaoRelatorios = scanner.nextInt();
+            //scanner.nextLine();
 
-            switch (opcaoRelatorios) {
-                case 1:
-                    gerarRelatorioAtividadesMembros();
-                    break;
-                case 2:
-                    gerarRelatorioUsoItens();
-                    break;
-                case 3:
-                    gerarRelatorioMultas();
-                    break;
-                case 4:
-                    gerarRelatorioDisponibilidadeItens();
-                    break;
-                case 5:
-                    gerarEstatisticasUsoPorPerfil();
-                    break;
-                case 6:
-                    gerarRelatorioItensPopulares();
-                    break;
-                case 7:
-                    return;
-                default:
-                    System.out.println("Opção inválida. Por favor, escolha novamente.");
+           // switch (opcaoRelatorios) {
+                //case 1:
+                    //gerarRelatorioAtividadesMembros();
+                    //break;
+               // case 2:
+                   // gerarRelatorioUsoItens();
+                   // break;
+                //case 3:
+                    //gerarRelatorioMultas();
+                   // break;
+                //case 4:
+                    //gerarRelatorioDisponibilidadeItens();
+                   // break;
+                //case 5:
+                   // gerarEstatisticasUsoPorPerfil();
+                    //break;
+               //case 6:
+                   // gerarRelatorioItensPopulares();
+                   // break;
+                //case 7:
+                   // return;
+               //default:
+                   // System.out.println("Opção inválida. Por favor, escolha novamente.");
             }
-        }
-    }
+        //}
+    //}
 
     private static void menuAdministracaoFuncionarios(Scanner scanner) {
         while (true) {

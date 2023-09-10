@@ -2,6 +2,7 @@ package biblioteca.models.salasEequipamentos;
 
 public class Multimidia {
 	
+	//classes internas
 	class Audio {
 		private String detalhesCds;
 		private String podcasts;

@@ -5,6 +5,7 @@ public class ReservaSala {
 	private String horaInicio;
 	private String horaFim;
 	
+	//classes internas
 	class SalaIndividual {
 		private boolean computadorDisponivel;
 		private int numeroSala;

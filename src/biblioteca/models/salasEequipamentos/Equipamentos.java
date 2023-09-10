@@ -2,6 +2,7 @@ package biblioteca.models.salasEequipamentos;
 
 public class Equipamentos {
 	
+	//classes internas
 	class Informatica {
 		private String especificacoesComputadores;
 		private boolean tabletDisponivel;
