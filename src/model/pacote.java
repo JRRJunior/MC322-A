@@ -10,10 +10,11 @@ abstract class pacote {
 		private String dataDeVolta;
 		private int numeroDePessoas;
 		private String companhiaAerea;
+		private String preco;
 		
 	//Construtor
 		
-		public pacote(String origem, String destino, String dataDeIda, String dataDeVolta, int numeroDePessoas, String companhiaAerea) {
+		public pacote(String origem, String destino, String dataDeIda, String dataDeVolta, int numeroDePessoas, String companhiaAerea, String preco) {
 			
 			this.origem = origem;
 			this.destino = destino;
@@ -21,12 +22,19 @@ abstract class pacote {
 			this.dataDeVolta = dataDeVolta;
 			this.numeroDePessoas = numeroDePessoas;
 			this.companhiaAerea = companhiaAerea;
+			this.preco = preco;
 		}
 		
 	//Métodos
 		
 		public void hotel(int diasDeEstadia) {
 			
+		}
+		
+	//Tipos de pacotes
+		
+		enum pacotes{
+			Aventura, Cultura, Relaxamento
 		}
 
 }
